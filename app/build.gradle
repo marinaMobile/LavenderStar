@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -43,6 +46,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.preference:preference-ktx:1.1.1"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
     implementation 'com.orhanobut:hawk:2.0.1'
     implementation 'com.appsflyer:af-android-sdk:6.5.2'
     implementation 'com.onesignal:OneSignal:4.8.0'

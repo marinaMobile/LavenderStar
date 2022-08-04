@@ -23,12 +23,19 @@
         tools:targetApi="31">
         <activity
             android:name=".white.Game"
+            android:theme="@style/Theme.AppCompat.Light"
             android:exported="false" />
         <activity
             android:name=".black.Web"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
             android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".white.ui.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".white.ui.PresetActivity"
+            android:exported="false" />
         <activity
             android:name=".black.Filter"
             android:exported="false" />
