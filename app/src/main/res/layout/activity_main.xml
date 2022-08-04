@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_url="https://assets2.lottiefiles.com/private_files/lf30_b2xfxj2x.json"/>
+        app:lottie_url="https://assets8.lottiefiles.com/packages/lf20_joxrygy7.json"/>
 
 
 
