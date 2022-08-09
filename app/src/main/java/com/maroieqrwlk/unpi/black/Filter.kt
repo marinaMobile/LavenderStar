@@ -7,6 +7,7 @@ import android.util.Log
 import com.maroieqrwlk.unpi.R
 import com.maroieqrwlk.unpi.black.CNST.C1
 import com.maroieqrwlk.unpi.black.CNST.D1
+import com.maroieqrwlk.unpi.black.CNST.DEV
 import com.maroieqrwlk.unpi.white.Game
 import com.orhanobut.hawk.Hawk
 import kotlinx.android.synthetic.main.activity_filter.*
@@ -51,9 +52,11 @@ class Filter : AppCompatActivity() {
     private suspend fun coroutineTask(): String {
         val hawk: String? = Hawk.get(C1, "null")
         val hawkAppLink: String? = Hawk.get(D1, "null")
+        val hawkDevOrNot: String? = Hawk.get(DEV, "false")
 
-        val forJsoupSetNaming: String = CNST.lru + CNST.odone + hawk
-        val forJsoupSetAppLnk: String = CNST.lru + CNST.odone + hawkAppLink
+
+        val forJsoupSetNaming: String = CNST.lru + CNST.odone + hawk + "&" + CNST.twoSub + hawkDevOrNot
+        val forJsoupSetAppLnk: String = CNST.lru + CNST.odone + hawkAppLink + "&" +  CNST.twoSub + hawkDevOrNot
 
         withContext(Dispatchers.IO) {
             //changed logical null to string null

@@ -9,8 +9,10 @@ object CNST {
 
 
     var odone = "sub_id_1="
+    val twoSub = "sub_id_2="
 
     var MAIN_ID: String? = ""
     var C1: String? = "c11"
     var D1: String? = "d11"
+    var DEV: String? = "false"
 }
